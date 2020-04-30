@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="708.0" prefWidth="1151.0" stylesheets="@../MyStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="21.0" layoutY="96.0" prefHeight="587.0" prefWidth="1109.0" style="-fx-background-color: white; -fx-border-color: black;" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="21.0" AnchorPane.topAnchor="96.0">
+         <children>
+            <TableView layoutX="64.0" layoutY="60.0" prefHeight="470.0" prefWidth="1009.0" AnchorPane.bottomAnchor="57.0" AnchorPane.leftAnchor="62.0" AnchorPane.rightAnchor="36.0" AnchorPane.topAnchor="58.0">
+              <columns>
+                <TableColumn minWidth="120.0" prefWidth="75.0" text="ID catégorie" />
+                <TableColumn minWidth="120.0" prefWidth="75.0" text="Nom catégorie" />
+                  <TableColumn minWidth="120.0" prefWidth="75.0" text="ID produit" />
+                  <TableColumn minWidth="120.0" prefWidth="75.0" text="Nom" />
+                  <TableColumn minWidth="120.0" prefWidth="75.0" text="Quantité" />
+                  <TableColumn minWidth="140.0" prefWidth="75.0" text="Prix de vente" />
+                  <TableColumn minWidth="120.0" prefWidth="75.0" text="Prix total" />
+                  <TableColumn minWidth="145.0" prefWidth="75.0" text="Date arrivage" />
+              </columns>
+            </TableView>
+            <Text layoutX="65.0" layoutY="566.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total :" wrappingWidth="81.99999326467514">
+               <font>
+                  <Font name="Monotype Corsiva" size="18.0" />
+               </font>
+            </Text>
+            <Line endX="-6.0" layoutX="207.0" layoutY="571.0" startX="-95.0" />
+            <Text layoutX="112.0" layoutY="566.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NAN">
+               <font>
+                  <Font name="Bodoni MT Condensed" size="16.0" />
+               </font>
+            </Text>
+            <TextArea layoutX="801.0" layoutY="14.0" prefHeight="19.0" prefWidth="177.0" AnchorPane.bottomAnchor="545.0" AnchorPane.topAnchor="14.0" />
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="985.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../loupe.png" />
+               </image>
+            </ImageView>
+            <MenuButton layoutX="82.0" layoutY="15.0" mnemonicParsing="false" style="-fx-background-color: white;" text="Trier par">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Quantité" />
+                  <MenuItem mnemonicParsing="false" text="Catégorie" />
+                <MenuItem mnemonicParsing="false" text="Prix" />
+                  <MenuItem mnemonicParsing="false" text="date opération" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Croissant" />
+                  <MenuItem mnemonicParsing="false" text="Décroissant" />
+              </items>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </MenuButton>
+         </children></AnchorPane>
+      <AnchorPane layoutX="213.0" layoutY="3.0" prefHeight="49.0" prefWidth="1151.0" style="-fx-background-color: yellow;" AnchorPane.bottomAnchor="659.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXComboBox focusColor="WHITE" layoutX="539.0" layoutY="12.0" prefHeight="25.0" prefWidth="103.0" promptText="Gestion stock" unFocusColor="BLACK" />
+            <JFXComboBox focusColor="WHITE" layoutX="705.0" layoutY="13.0" prefHeight="25.0" prefWidth="82.0" promptText="Employés" unFocusColor="BLACK" />
+            <JFXComboBox focusColor="WHITE" layoutX="856.0" layoutY="13.0" prefHeight="25.0" prefWidth="92.0" promptText="Historique" unFocusColor="BLACK" />
+            <JFXComboBox focusColor="WHITE" layoutX="1018.0" layoutY="9.0" promptText="Déconnexion" unFocusColor="BLACK" />
+            <ImageView fitHeight="30.0" fitWidth="75.0" layoutX="972.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../deconnexion.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="812.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Historique.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="38.0" layoutX="657.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Employés.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="44.0" layoutX="496.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gestionStock.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+        
+   </children>
+</AnchorPane>

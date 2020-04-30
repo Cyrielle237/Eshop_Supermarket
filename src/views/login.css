@@ -1,0 +1,21 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-color:white;
+}
+.background-Pane{
+    -fx-background-image:url("asdainstore.jpg");
+    -fx-background-position: center center; 
+    -fx-background-repeat:repeat;
+}
+
+.vbox{
+    -fx-background-color: white;
+    -fx-background-radius: 50px;
+}
+
+.button{
+    -fx-background-color:#ffa500;
+}

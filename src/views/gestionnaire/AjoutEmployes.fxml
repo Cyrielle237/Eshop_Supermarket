@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox id="box" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="546.0" prefWidth="662.0" spacing="25.0" styleClass="box" stylesheets="@../Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.gestionnaire.AjoutEmployesController">
+   <children>
+      <JFXTextField fx:id="nameField" alignment="CENTER" focusColor="ORANGE" labelFloat="true" promptText="Nom" />
+      <JFXTextField fx:id="logInField" alignment="CENTER" focusColor="ORANGE" labelFloat="true" layoutX="10.0" layoutY="195.0" promptText="Nom Utilisateur" />
+      <JFXTextField fx:id="pwdField" alignment="CENTER" focusColor="ORANGE" labelFloat="true" layoutX="10.0" layoutY="210.0" promptText="Mot de Passe" />
+      <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="400.0" spacing="50.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="110.0" text="Type de Compte :" />
+            <JFXRadioButton fx:id="isCashierRadio" text="Cashier">
+               <toggleGroup>
+                  <ToggleGroup fx:id="TypeGestionnaire" />
+               </toggleGroup>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="isGestionnaireRadio" text="Gestionnaire" toggleGroup="$TypeGestionnaire" />
+            <JFXRadioButton fx:id="isGestionnaireRadio1" layoutX="270.0" layoutY="24.0" text="Magazinier">
+               <toggleGroup>
+                  <ToggleGroup fx:id="TypeGestionnaire1" />
+               </toggleGroup>
+            </JFXRadioButton>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="400.0" spacing="80.0">
+         <children>
+            <Label text="Etat :" />
+            <JFXToggleButton fx:id="StateToggleButton" onAction="#changeState" prefHeight="38.0" prefWidth="165.0" text="Inactive" toggleColor="ORANGE" toggleLineColor="#2a2e3799" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="100.0">
+         <children>
+            <JFXButton id="validate-button" fx:id="validateButton" buttonType="RAISED" onAction="#validate" text="Valider">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></JFXButton>
+            <JFXButton id="cancel-button" fx:id="cancelButton" buttonType="RAISED" onAction="#cancel" stylesheets="@../Style.css" text="Annuler" textFill="#2c2828">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></JFXButton>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="10.0" left="50.0" right="50.0" top="10.0" />
+         </padding>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="50.0" left="100.0" right="100.0" top="75.0" />
+   </padding>
+</VBox>

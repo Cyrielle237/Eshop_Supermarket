@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="725.0" prefWidth="1031.0" styleClass="mainFxmlClass" stylesheets="@login.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.LogInController">
+   <children>
+      <AnchorPane layoutY="141.0" prefHeight="575.0" prefWidth="1031.0" styleClass="background-Pane" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="141.0">
+         <children>
+            <VBox alignment="CENTER" opacity="0.85" prefHeight="200.0" prefWidth="100.0" spacing="15.0" styleClass="vbox" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="75.0">
+               <children>
+                  <Label text="User Name">
+                     <font>
+                        <Font name="Cookie-Regular" size="30.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="userNameField" alignment="CENTER" />
+                  <Label text="Password">
+                     <font>
+                        <Font name="Cookie-Regular" size="30.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="passwordField" alignment="CENTER" />
+                  <Pane prefHeight="38.0" prefWidth="400.0" />
+                  <JFXButton fx:id="logInButton" onAction="#logIn" prefWidth="150.0" text="LogIn" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets bottom="25.0" left="50.0" right="50.0" top="25.0" />
+               </padding>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

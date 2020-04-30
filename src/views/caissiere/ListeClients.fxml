@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="708.0" prefWidth="1151.0" stylesheets="@../MyStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="21.0" layoutY="96.0" prefHeight="587.0" prefWidth="1109.0" style="-fx-background-color: white; -fx-border-color: black;" stylesheets="@../MyStyle.css" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="21.0" AnchorPane.topAnchor="96.0">
+         <children>
+            <TableView layoutX="63.0" layoutY="91.0" prefHeight="440.0" prefWidth="994.0" AnchorPane.bottomAnchor="57.0" AnchorPane.leftAnchor="62.0" AnchorPane.rightAnchor="53.0" AnchorPane.topAnchor="90.0">
+              <columns>
+                <TableColumn minWidth="200.0" prefWidth="75.0" text="Code produit" />
+                  <TableColumn minWidth="200.0" prefWidth="75.0" text="Nom" />
+                  <TableColumn minWidth="200.0" prefWidth="75.0" text="Quantité" />
+                  <TableColumn minWidth="200.0" prefWidth="75.0" text="Prix unitaire" />
+                  <TableColumn minWidth="200.0" prefWidth="75.0" text="Prix total" />
+              </columns>
+            </TableView>
+            <Button layoutX="963.0" layoutY="547.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="92.0" style="-fx-background-color: red; -fx-text-fill: white; -fx-border-color: red;" text="Supprimer">
+               <font>
+                  <Font name="Monotype Corsiva" size="12.0" />
+               </font>
+            </Button>
+            <JFXDatePicker defaultColor="BLACK" layoutX="973.0" layoutY="14.0" prefHeight="25.0" prefWidth="140.0" promptText="Date" AnchorPane.leftAnchor="973.0" AnchorPane.rightAnchor="38.0" />
+            <MenuButton layoutX="83.0" layoutY="49.0" mnemonicParsing="false" style="-fx-background-color: white;" text="Trier par">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Total des achats" />
+                  <MenuItem mnemonicParsing="false" text="Ordre aphabétique" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                <MenuItem mnemonicParsing="false" text="Croissant" />
+                  <MenuItem mnemonicParsing="false" text="Décroissant" />
+              </items>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </MenuButton>
+         </children></AnchorPane>
+      <AnchorPane layoutX="213.0" layoutY="3.0" prefHeight="49.0" prefWidth="1151.0" style="-fx-background-color: yellow;" AnchorPane.bottomAnchor="659.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXComboBox focusColor="WHITE" layoutX="539.0" layoutY="12.0" prefHeight="25.0" prefWidth="103.0" promptText="Facturation" unFocusColor="BLACK" />
+            <JFXComboBox focusColor="WHITE" layoutX="705.0" layoutY="13.0" prefHeight="25.0" prefWidth="82.0" promptText="Stock" unFocusColor="BLACK" />
+            <JFXComboBox focusColor="WHITE" layoutX="856.0" layoutY="13.0" prefHeight="25.0" prefWidth="92.0" promptText="Clients" unFocusColor="BLACK" />
+            <JFXComboBox focusColor="WHITE" layoutX="1018.0" layoutY="9.0" promptText="Déconnexion" unFocusColor="BLACK" />
+            <ImageView fitHeight="30.0" fitWidth="75.0" layoutX="972.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../deconnexion.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="812.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../client.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="38.0" layoutX="657.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gestionStock.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="44.0" layoutX="496.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../facture.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+        
+   </children>
+</AnchorPane>

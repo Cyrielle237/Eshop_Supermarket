@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox id="box" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="581.0" prefWidth="723.0" spacing="25.0" styleClass="box" stylesheets="@../Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.gestionnaire.AjoutEmployesController">
+   <children>
+      <JFXComboBox prefHeight="25.0" prefWidth="226.0" promptText="ID Fournisseur">
+         <VBox.margin>
+            <Insets left="80.0" right="80.0" />
+         </VBox.margin>
+      </JFXComboBox>
+      <JFXComboBox focusColor="ORANGE" prefHeight="25.0" prefWidth="226.0" promptText="ID Catégorie">
+         <VBox.margin>
+            <Insets left="80.0" right="80.0" />
+         </VBox.margin>
+      </JFXComboBox>
+      <JFXTextField alignment="CENTER" focusColor="ORANGE" promptText="Code produit" />
+      <JFXTextField alignment="CENTER" focusColor="ORANGE" promptText="Quantité" />
+      <JFXTextField alignment="CENTER" focusColor="ORANGE" promptText="Prix d'achat" />
+      <JFXTextField fx:id="nameField" alignment="CENTER" focusColor="ORANGE" labelFloat="true" promptText="prix de vente" />
+      <JFXTextField alignment="CENTER" focusColor="ORANGE" promptText="Date de peremption" />
+      <HBox alignment="CENTER" prefHeight="23.0" prefWidth="460.0" spacing="100.0">
+         <children>
+            <JFXButton id="validate-button" fx:id="validateButton" buttonType="RAISED" onAction="#validate" text="Valider">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></JFXButton>
+            <JFXButton id="cancel-button" fx:id="cancelButton" buttonType="RAISED" onAction="#cancel" text="Annuler">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></JFXButton>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="10.0" left="50.0" right="50.0" top="10.0" />
+         </padding>
+         <opaqueInsets>
+            <Insets bottom="50.0" />
+         </opaqueInsets>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="50.0" left="100.0" right="100.0" top="75.0" />
+   </padding>
+</VBox>
